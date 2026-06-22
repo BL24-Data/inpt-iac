@@ -1,0 +1,9 @@
+output "vpc_id"          { value = module.network.vpc_id }
+output "public_subnets"  { value = module.network.public_subnet_ids }
+output "private_subnets" { value = module.network.private_subnet_ids }
+output "web_sg_id"       { value = module.compute.web_sg_id }
+output "app_sg_id"       { value = module.compute.app_sg_id }
+output "web_instances"   { value = module.compute.web_instance_ids }
+output "app_instances"   { value = module.compute.app_instance_ids }
+output "assets_bucket"   { value = module.storage.assets_bucket_id }
+output "backups_bucket"  { value = module.storage.backups_bucket_id }
